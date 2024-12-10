@@ -4,5 +4,5 @@ import (
 	"fmt"
 )
 func main() {
-	println("hellow,word")
+	fmt.println("hellow,word")
 }
