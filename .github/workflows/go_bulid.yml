@@ -24,4 +24,6 @@ jobs:
          chmod +x main
          ls 
          ./main
-    
+      
+    - name: echo secrets value
+      run: echo ${{ secrets.REMOTE_PASS }}
