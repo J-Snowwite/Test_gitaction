@@ -7,5 +7,9 @@ pwd
 echo "###############"
 grep "physical id" /proc/cpuinfo | sort | uniq| wc -l
 echo "###############"
+cat /proc/cpuinfo
+echo "###############"
 free -h
+echo "###############"
+curl ip.gs
 echo "###############"
