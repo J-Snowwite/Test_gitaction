@@ -19,7 +19,7 @@ jobs:
     - name: Build
       run: go build -v ./main.go
 
-    - name: Test
+    - name: Test_file_run
       run: |
          chmod +x main
          ls 
