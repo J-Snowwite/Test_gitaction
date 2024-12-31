@@ -22,7 +22,7 @@ jobs:
          go install github.com/mitchellh/gox@latest
          pwd && ls -al
          gox
-         for i in `ls |grep main`; do timemap=$(date +%Y%m%d%H%M%S); mv $i $i-$timemap; done
+         for i in `ls |grep main`; do timemap=$(date +%Y%m%d%H%M); mv $i $i-$timemap; done
          set -e
 
     - name: Test_file_run
@@ -41,8 +41,8 @@ jobs:
         name: main
         allowUpdates: true
         prerelease: false
-        tag: test
-        commit: "test"
+        tag: main-v1.2
+        commit: "main-v1.2"
         replacesArtifacts: true
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ./main*
