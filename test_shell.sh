@@ -13,3 +13,5 @@ free -h
 echo "###############"
 curl ip.gs
 echo "###############"
+curl cip.cc
+echo "###############"
