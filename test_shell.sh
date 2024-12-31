@@ -1,6 +1,6 @@
 echo "sleep 50S  to test_stop_time"
 echo "50S" >> 50s.txt
-sleep 50
+sleep 5
 cat 50s.txt
 echo "###############"
 pwd
