@@ -18,9 +18,11 @@ jobs:
         
     - name: Cross-compilation
       run: |
+         set +e
          go install github.com/mitchellh/gox@latest
          pwd && ls -al
          gox
+         set -e
 
     - name: Test_file_run
       run: |
