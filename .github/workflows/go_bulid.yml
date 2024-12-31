@@ -38,13 +38,14 @@ jobs:
       id: create_release
       uses: ncipollo/release-action@main
       with:
-        name: main-${{ env.latest_release }}
+        name: main
         allowUpdates: true
         prerelease: false
-        tag: ${{ env.latest_release }}
+        tag: test
         commit: "test"
         replacesArtifacts: true
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: ./artifact/*.zip
+        artifacts: ./main*
+        
     - name: Print Disk Space After
       run: df -h
