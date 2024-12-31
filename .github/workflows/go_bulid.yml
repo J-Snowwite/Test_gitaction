@@ -41,8 +41,8 @@ jobs:
         name: main
         allowUpdates: true
         prerelease: false
-        tag: main-v1.2
-        commit: "main-v1.2"
+        tag: "myfirest_v1.0"
+        commit: "myfirest_v1.0"
         replacesArtifacts: true
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ./main*
