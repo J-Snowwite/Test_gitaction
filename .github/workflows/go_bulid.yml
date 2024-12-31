@@ -19,6 +19,7 @@ jobs:
     - name: Cross-compilation
       run: |
          go install github.com/mitchellh/gox@latest
+         pwd && ls -al
          gox
 
     - name: Test_file_run
