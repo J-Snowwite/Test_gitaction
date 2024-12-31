@@ -26,9 +26,9 @@ jobs:
 
     - name: Test_file_run
       run: |
-         chmod +x main
+         chmod +x main_linux_amd64
          ls 
-         ./main
+         ./main_linux_amd64
       
     - name: echo secrets value
       run: echo ${{ secrets.REMOTE_PASS }}
